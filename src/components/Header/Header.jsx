@@ -2,14 +2,21 @@ import { Link } from "react-router-dom";
 
 
 const Header = () => {
+
+    const design = {
+        marginRight: '20px',
+        fontSize: '30px',
+    }
+
     return (
         <div>
             <h1>this is header</h1>
-            <nav>
-                <Link to='/'>Home</Link>
-                <Link to='/users'>Users</Link>
-                <Link to='/about'>About</Link>
-                <Link to='/contact'>Contact Us</Link>
+            <nav >
+                <Link style={design} to='/'>Home</Link>
+                <Link style={design} to='/users'>Users</Link>
+                <Link style={design} to='/posts'>Posts</Link>
+                <Link style={design} to='/about'>About</Link>
+                <Link style={design} to='/contact'>Contact Us</Link>
             {/* <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a> */}
